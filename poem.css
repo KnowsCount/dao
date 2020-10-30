@@ -1,0 +1,12 @@
+body {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    font-family: Microsoft Jhenghei;
+    font-size: 3em;
+}
+
+blockquote {
+    background: rgb(235, 235, 235);
+    box-shadow:  20px 20px 60px #dbdbdb, -20px -20px 60px #dbdbdb;
+}
