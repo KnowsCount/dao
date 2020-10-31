@@ -1,12 +1,35 @@
 body {
-    position: relative;
-    text-align: center;
-    top: 50%;
-    font-family: Microsoft Jhenghei;
-    font-size: 3em;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	font-family: Microsoft Jhenghei;
+	font-size: 3em;
 }
 
 blockquote {
-    background: rgb(235, 235, 235);
-    box-shadow:  20px 20px 60px #dbdbdb, -20px -20px 60px #dbdbdb;
+	background: rgb(235, 235, 235);
+	box-shadow:  20px 20px 60px #dbdbdb, -20px -20px 60px #dbdbdb;
+	border-radius: 1rem;
+}
+
+html {
+	background-image: url(./assets/tianshu-liu-SBK40fdKbAg-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.button {
+	background-color: rgb(196, 196, 196);
+	border-radius: .4rem;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	height: 3.8rem;
+	line-height: 3.8rem;
+	padding: 0 3.0rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
 }

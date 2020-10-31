@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>道</title>
-        <meta charset="utf-8">
-        <link href="poem.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>今日之道</h1>
-        <blockquote id="jinrishici-sentence">正在加载今日之道……</blockquote>
-        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        <div id="poem_sentence"></div>
-        <div id="poem_info"></div>
-        <script type="text/javascript">
-          jinrishici.load(function(result) {
-            var sentence = document.querySelector("#poem_sentence")
-            var info = document.querySelector("#poem_info")
-            info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-          });
-        </script>
-    </body>
+		<head>
+				<title>道 | 诗句</title>
+				<meta charset="utf-8">
+				<link href="poem.css" rel="stylesheet">
+		</head>
+		<!--<style type="text/css">
+			.wrapper {position: relative;}
+			#input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+		 </style>-->
+		<body>
+			<h1>今日之道</h1>
+			<!--<div id="wrapper">-->
+<!--			<script type="text/javascript">
+					function copyText() {
+						var text = document.getElementById("text").innerText;
+						var input = document.getElementById("input");
+						input.value = text; // 修改文本框的内容
+						input.select(); // 选中文本
+						document.execCommand("copy"); // 执行浏览器复制命令
+						alert("复制成功");
+					}
+				</script>-->	
+				<blockquote id="jinrishici-sentence" id="text">正在加载今日之道……</blockquote>
+				<!--<textarea id="input">这是幕后黑手</textarea>-->	
+				<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+				<!--<button onclick="copyText()">copy</button>-->	
+			<!--</div>-->	
+				<div id="poem_sentence"></div>
+				<div id="poem_info"></div>
+				<script type="text/javascript">
+					jinrishici.load(function(result) {
+						var sentence = document.querySelector("#poem_sentence")
+						var info = document.querySelector("#poem_info")
+						info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+					});
+				</script>
+				<a class="button" onclick="location.reload()">换一句</button>
+		</body>
 </html>
