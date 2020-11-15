@@ -5,8 +5,9 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
+
 > 「道」。道生一，一生二，二生三，三生万物。大道至简。
 
 ---
 
-A website
+一个网站。调用了每日诗词的 api。练手用的。
